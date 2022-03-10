@@ -23,7 +23,7 @@ public class IdiomaDRepository implements IdiomaIRepository {
         int b = 0;
         b = template.update("Insert into Idioma(nombre, activo) values (?, ?)",
                 new Object[] {idioma.getNombre(), idioma.isActivo()});
-        return 0;
+        return b;
     }
 
     @Override
