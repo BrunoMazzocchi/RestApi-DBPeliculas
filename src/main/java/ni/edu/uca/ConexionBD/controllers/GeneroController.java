@@ -24,7 +24,7 @@ public class GeneroController {
     public String agregarGen(@RequestBody Genero gen){
         String msg = "Error al guardar registro...";
          int b = genS.GuardarRegistro(gen);
-         if(b==1)msg="Registrar guardado satisfactoriament...";
+         if(b==1)msg="Registrar guardado satisfactoriamente...";
          return "";
     }
 
